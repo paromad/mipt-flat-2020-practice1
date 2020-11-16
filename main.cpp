@@ -1,12 +1,11 @@
 #include <iostream>
 #include <stack>
 #include <vector>
-#include <climits>
 
 
 class Regular {
     typedef std::vector<size_t> Node;
-    const size_t INF = SIZE_MAX;
+    const size_t INF = std::numeric_limits<size_t>::max();
 
     std::string regular_;
     std::stack<Node> stack_of_nodes_;
